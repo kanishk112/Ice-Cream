@@ -1,0 +1,81 @@
+.food_header{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.first{
+  z-index: -1;
+  width: 30%;
+  height: 100vh;
+  background: #987456;
+  clip-path: polygon(0 0,100% 0,100% 80%,25% 100%, 0 80%);
+}
+.second{
+  z-index: -1;
+  width: 40%;
+  height: 100vh;
+  background: #826644;
+  clip-path: polygon(0 0,100% 0,100% 80%,25% 100%, 0 80%);
+}
+.third{
+  z-index: -1; 
+  width: 30%;
+  height: 100vh; 
+  background: #6b4423;
+  clip-path: polygon(0 0,100% 0,100% 80%,25% 100%, 0 80%);
+}
+
+.plate{
+  position: absolute;
+  right: 60px;
+  top:-10px;
+  bottom: 10px;
+
+  img{
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+
+    @media (min-width: 360px) { 
+      margin: 300px 2px 5px 30px;
+    }
+  @media (min-width: 480px) {
+    margin: 200px 2px 5px 30px;
+  }
+  @media (min-width: 640px) { 
+    margin: 200px 2px 5px 30px;
+  }
+  }
+}
+
+.text{
+  left: 10%;
+  top: 20%;
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-family: "Merienda";
+
+  button{
+    padding: 10px 20px;
+    color: white;
+    background: #6b4423;
+    border-radius: 27px;
+  }  
+  
+  @media (min-width: 360px) { 
+      font-size: 22px; 
+    }
+  @media (min-width: 480px) { 
+      font-size: 40px; 
+  }
+  @media (min-width: 640px) { 
+      font-size: 48px; 
+  }
+  @media (min-width: 1024px) { 
+      font-size: 50px; 
+  }
+   
+
+}

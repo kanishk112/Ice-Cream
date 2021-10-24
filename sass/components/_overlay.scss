@@ -1,0 +1,8 @@
+@import "../base/globals";
+
+.overlay {
+    @include centered;
+    flex-wrap: wrap;
+    @include whh;
+    background-color: rgba($color: #000, $alpha: 0.5);
+}
